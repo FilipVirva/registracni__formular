@@ -1,0 +1,79 @@
+html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.registracni_formular{
+    background-color: white;
+    position: absolute;
+    margin-top: 15%;
+    left: 40%;
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.bg{
+    background-image: url("https://cdn.discordapp.com/attachments/657615719239778325/1045448737104875580/IMG20220621155915.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#nadpis{
+    color: white;
+    font-size: 3.5em;
+    padding-top: 10%
+}
+
+.tlacitko{
+    margin-top: 20%;
+    font-size: 250%;
+    padding: 10px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border-radius: 5px;
+    border-width: 5px;
+    animation: appear 0.5;
+}
+
+.tlacitko:hover {
+    animation: pulse 1.0s;
+}
+
+@keyframes pulse{
+    0%{
+        background-color: #98bcec;
+    }
+    100%{
+        background-color: Transparent;
+    }
+}
+
+@keyframes appear{
+    0%{
+        
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: #98bcec;
+    color: black;
+}
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Úvodní stránka</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<div class="bg">
+    <h1 id="nadpis">Rozsazení v lodích na vodáckém kurzu 2023 SPŠE Ječná</h1>
+    <button onclick="window.location.href='registrace'" class="tlacitko">Registrovat se</button>
+</div>
+<div class="row" style="text-align: center;">
+    <h2>Seznam účastníků:</h2>
+    {% for ucastnik in ucastnici %}
+    <h3>Účastník: {{ ucastnik[0]}}</h3>
+    <h3>Partner: {{ucastnik[1]}}</h3>
+    <br>
+    <br>
+    {% endfor %}
+</div>
+<footer>
+    <p>e</p>
+</footer>
+</body>
+</html>
