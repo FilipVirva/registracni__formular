@@ -32,6 +32,7 @@ $(document).ready(function() {
         url: "/api/register/" + vyplnenyNick + "/" + vyplnenyKamos + "/" +jePlavec ,
         success: function(result) {
         alert(result)
+        location.href = "/"
       }
       })
       return true;
