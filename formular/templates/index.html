@@ -16,11 +16,28 @@
 </div>
 <div class="row" style="text-align: center;">
     <h2>Seznam účastníků:</h2><br>
-    {% for ucastnik in ucastnici %}
-    <h3>{{ ucastnik[0]}}</h3>
-    <br>
-    <br>
-    {% endfor %}
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <table class="table">
+            <thead style="background-color: #98bcec">
+                <tr>
+                    <th scope="col">Přezdívka</th>
+                    <th scope="col">Spolujezdec</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ucastnik in ucastnici %}
+                    <tr class="ucastnici">
+                        <td>{{ ucastnik[0] }}</td>
+                        <td>{{ ucastnik[1] }}</td>
+                    </tr>
+                {% endfor %}    
+            </tbody>
+        </table>
+        </div>
+        <div class="col-md-4"></div>
+    </div> 
 </div>
 <footer>
     <a href="https://github.com/FilipVirva/registracni__formular">Github a feedback</a>
