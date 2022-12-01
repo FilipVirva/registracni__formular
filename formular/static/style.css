@@ -52,16 +52,11 @@ body{
 }
 
 .tlacitko:hover {
-    animation: pulse 1.0s;
+    background-color: #98bcec;
 }
 
-@keyframes pulse{
-    0%{
-        background-color: #98bcec;
-    }
-    100%{
-        background-color: Transparent;
-    }
+tr.ucastnici:hover{
+    background-color: #A6CED6;
 }
 
 @keyframes appear{
