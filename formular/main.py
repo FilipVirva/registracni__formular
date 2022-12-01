@@ -30,7 +30,7 @@ def validation(nick,kamarad,je_plavec):
 
         with open("soubor.csv", "a",newline="", encoding="UTF-8") as file:
             writer = csv.writer(file)
-            writer.writerow(ucastnici)
+            writer.writerows(ucastnici)
         
         ucastnici.clear()
         return "Úspěšně přidáno"
@@ -38,4 +38,4 @@ def validation(nick,kamarad,je_plavec):
         return "Omlouváme se, ale z bezpečnostních důvodů je kurz pouze pro plavce", 400
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=80)
